@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | Dev Archive</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/logo-tab.png">
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <style>
+        .post-header {
+            margin: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        .post-meta {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        /* Layout Grid */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 60px;
+            margin-top: 40px;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            position: sticky;
+            top: 40px;
+            height: fit-content;
+            border-right: 1px solid var(--border-color);
+            padding-right: 30px;
+        }
+
+        .sidebar-title {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .sidebar-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-list li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar-list a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .sidebar-list li.active a {
+            color: var(--accent-color);
+            font-weight: 700;
+            padding-left: 10px;
+            border-left: 2px solid var(--accent-color);
+        }
+
+        .sidebar-list a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Content Styling */
+        .post-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-width: 800px;
+        }
+
+        .post-content h2 {
+            margin-top: 40px;
+            color: var(--text-primary);
+        }
+
+        .post-content pre {
+            background: #0a0a0b;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin: 30px 0;
+        }
+
+        .post-content code {
+            color: var(--accent-color);
+        }
+
+        .post-content ul {
+            margin: 20px 0 30px 40px;
+        }
+
+        .post-content li {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 968px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding-bottom: 40px;
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container" style="height: auto; padding-bottom: 0;">
+        <nav class="top-nav" style="padding-top: 40px;">
+            <a href="../index.html" class="brand" style="text-decoration: none; color: inherit;">
+                <div class="natgeo-logo"></div>
+                <span>Dev<br>Archive</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <p>Engineering<br>Curriculum</p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="article-layout">
+            <!-- Navigation Sidebar -->
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Materi Terkait</h3>
+                {{ sidebar_nav }}
+            </aside>
+
+            <!-- Main Content -->
+            <article>
+                <header class="post-header">
+                    <a href="../pages/explore.html" class="back-link"
+                        style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px; transition: 0.3s;">
+                        <i class="fas fa-arrow-left"></i> Kembali ke Explore
+                    </a>
+                    <p class="post-meta">{{ date }} | {{ category }}</p>
+                    <h1 class="section-title" style="font-size: 3rem; margin-bottom: 10px;">{{ title }}</h1>
+                    <p style="font-style: italic; color: var(--text-secondary);">By {{ author }}</p>
+                </header>
+                <div class="post-content">
+                    {{ content }}
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="container"
+        style="padding: 60px 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary); font-size: 0.8rem; margin-top: 100px;">
+        <p>&copy; 2026 Dev Archive | Coding Ecosystem</p>
+    </footer>
+
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

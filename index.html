@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Eksplorasi Teknologi dan Rekayasa Perangkat Lunak - Terinspirasi oleh Alterpix & National Geographic">
+    <title>Dev Archive | Code. Build. Explore.</title>
+    <!-- Favicon / Logo Tab -->
+    <link rel="icon" type="image/png" href="assets/img/logo-tab.png">
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+
+    <header class="container">
+        <nav class="top-nav">
+            <div class="brand">
+                <div class="natgeo-logo"></div>
+                <span>Dev<br>Archive</span>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <p>Architecture is<br>about making life<br>more simple,<br>not more<br>complicated.</p>
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+            </div>
+        </nav>
+
+        <main class="hero">
+            <div class="hero-main">
+                <div class="hero-text-left">Code</div>
+                <div class="hero-sub">
+                    Technology<br>is the<br>closest thing<br>we have to<br>magic.
+                </div>
+                <div class="hero-text-right">by Building.</div>
+            </div>
+            <!-- Coding/Tech Image: local image in assets/img/ -->
+            <img src="assets/img/hero-tech.jpg" alt="Technology" class="earth-bg" id="hero-earth"
+                style="filter: brightness(0.7) contrast(1.2);">
+        </main>
+    </header>
+
+    <section id="engineering" class="container">
+        <div class="section-label" data-index="01">Engineering.</div>
+
+        <div class="content-grid">
+            <!-- Featured Article -->
+            <article class="card article-featured reveal">
+                <div class="article-content">
+                    <div class="section-label" data-index="">Analysis.</div>
+                    <p class="author">LEARNING GUIDE</p>
+                    <h2 class="section-title">Start Your Journey to Becoming a Professional Software Engineer</h2>
+                    <p>A comprehensive guide to learning programming from scratch to mastery with a structured
+                        curriculum.</p>
+                    <a href="pages/explore.html" class="btn-explore">
+                        <i class="fas fa-arrow-down"></i> Explore the code
+                    </a>
+                </div>
+                <div class="article-image-container">
+                    <img src="assets/img/quantum-code.jpg" alt="Code Analysis">
+                </div>
+            </article>
+
+            <!-- Grid Items -->
+            <div class="card reveal" style="grid-column: span 4;">
+                <p>17 FEBRUARY 2026</p>
+                <h3>Rust vs C++: Understanding Memory Safety Without Garbage Collection</h3>
+            </div>
+            <div class="card reveal" style="grid-column: span 4;">
+                <p>12 JANUARY 2026</p>
+                <h3>Why Low-Level Programming Matters in the Age of AI Frameworks</h3>
+            </div>
+            <div class="card reveal" style="grid-column: span 4;">
+                <p>05 JANUARY 2026</p>
+                <h3>The Evolution of Neural Networks: From Perceptrons to Transformers</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="systems" class="container">
+        <div class="content-grid">
+            <div class="card reveal" style="grid-column: span 6;">
+                <h2 class="section-title">Hardware.</h2>
+                <h3>Chipsets.</h3>
+                <div class="list-item">
+                    <img src="assets/img/hardware-chip.jpg" alt="Microchip"
+                        style="width: 100%; border-radius: 50%; aspect-ratio: 1; margin-bottom: 20px; filter: grayscale(1);">
+                </div>
+            </div>
+            <div class="card reveal" style="grid-column: span 6;">
+                <h2 class="section-title">Data Centers.</h2>
+                <img src="assets/img/data-center.jpg" alt="Network" class="card-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="coding" class="container">
+        <div class="section-label" data-index="02">Stack.</div>
+        <div class="content-grid">
+            <div class="card reveal" style="grid-column: span 3;">
+                <div class="natgeo-logo" style="width: 15px; height: 20px; border-width: 3px; margin-bottom: 15px;">
+                </div>
+                <h3>Frontend</h3>
+                <p>Vite, React, dan CSS tingkat lanjut untuk pengalaman visual yang mulus.</p>
+                <a href="#" class="learn-more"
+                    style="color: var(--accent-color); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
+                    STACK &rarr;</a>
+            </div>
+            <div class="card reveal" style="grid-column: span 3;">
+                <div class="natgeo-logo" style="width: 15px; height: 20px; border-width: 3px; margin-bottom: 15px;">
+                </div>
+                <h3>Backend</h3>
+                <p>Go dan Rust untuk sistem server yang memiliki performa tinggi dan aman.</p>
+                <a href="#" class="learn-more"
+                    style="color: var(--accent-color); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
+                    STACK &rarr;</a>
+            </div>
+            <div class="card reveal" style="grid-column: span 3;">
+                <div class="natgeo-logo" style="width: 15px; height: 20px; border-width: 3px; margin-bottom: 15px;">
+                </div>
+                <h3>DevOps</h3>
+                <p>Otomasi pipeline dengan Docker, Kubernetes, dan GitHub Actions.</p>
+                <a href="#" class="learn-more"
+                    style="color: var(--accent-color); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
+                    STACK &rarr;</a>
+            </div>
+            <div class="card reveal" style="grid-column: span 3;">
+                <div class="natgeo-logo" style="width: 15px; height: 20px; border-width: 3px; margin-bottom: 15px;">
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Implementasi model AI menggunakan PyTorch dan optimasi CUDA.</p>
+                <a href="#" class="learn-more"
+                    style="color: var(--accent-color); text-decoration: none; font-size: 0.8rem; font-weight: bold;">VIEW
+                    STACK &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="torn-edge"></div>
+
+    <section id="network" class="container">
+        <div class="section-label" data-index="03">Network.</div>
+        <div class="content-grid">
+            <div class="card reveal" style="grid-column: span 4;">
+                <p>Real-time Global Threat Map. Visualisasi serangan siber dan arus data antar benua.</p>
+            </div>
+            <div class="card reveal" style="grid-column: span 8;">
+                <div class="expeditions-map">
+                    <p>[Global Data Nodes Visualization]</p>
+                    <div class="btn-explore" style="position: absolute; bottom: 20px; left: 20px;">
+                        <i class="fas fa-network-wired"></i> Scan Network
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-folders" class="container">
+        <div class="section-label" data-index="04">Project Structure.</div>
+        <div class="content-grid">
+            <div class="card reveal" style="grid-column: span 6;">
+                <h3>03. Folder <code>content/</code></h3>
+                <p>Sumber Tulisan. Di sinilah semua dokumentasi teknis disimpan dalam format <strong>Markdown
+                        (.md)</strong>.</p>
+            </div>
+            <div class="card reveal" style="grid-column: span 6;">
+                <h3>04. Folder <code>writeups/</code></h3>
+                <p>Halaman Publik. Hasil build statis yang dioptimalkan untuk performa tinggi dan aksesibilitas.</p>
+            </div>
+            <div class="card reveal" style="grid-column: span 12;">
+                <h3>05. Folder <code>templates/</code></h3>
+                <p>Desain Layout. Menggunakan komponen modular untuk memastikan struktur visual yang konsisten di
+                    seluruh platform.</p>
+            </div>
+            <div class="card reveal" style="grid-column: span 12;">
+                <h3>06. Folder <code>tools/</code></h3>
+                <p>Automasi Pipeline. Berisi skrip Python untuk integrasi CI/CD, optimasi SEO, dan pemindaian keamanan
+                    otomatis.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container"
+        style="padding: 40px 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary); font-size: 0.8rem;">
+        <p>&copy; 2026 Dev Archive | Engineering Excellence. Inspired by National Geographic Aesthetics.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eksplorasi Kurikulum Pemrograman - HTML, CSS, dan JS">
+    <title>Explore Materials | Dev Archive</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/logo-tab.png">
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+</head>
+
+<body>
+
+    <header class="container" style="height: auto; padding-bottom: 0;">
+        <nav class="top-nav" style="padding-top: 40px;">
+            <a href="../index.html" class="brand" style="text-decoration: none; color: inherit;">
+                <div class="natgeo-logo"></div>
+                <span>Dev<br>Archive</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <p>Knowledge is<br>the only thing<br>that grows when<br>shared.</p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <a href="../index.html" class="back-link"
+            style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-secondary); font-size: 0.9rem; margin-top: 40px; transition: 0.3s;">
+            <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+        </a>
+        <div class="hero-text-left" style="font-size: 4rem; margin-top: 20px;">Explore.</div>
+        <p style="color: var(--text-secondary); max-width: 500px; margin-top: 10px;">Cari dan pelajari dasar-dasar
+            pengembangan web modern melalui kurikulum terstruktur kami.</p>
+
+        <div class="search-container">
+            <input type="text" class="search-input" id="search-box"
+                placeholder="Cari bahasa pemrograman (e.g. HTML)...">
+            <div class="search-icon-btn"><i class="fas fa-search"></i></div>
+        </div>
+
+        <section id="materials-grid" class="content-grid" style="padding-top: 0;">
+            <!-- HTML -->
+            <div class="card reveal material-card" data-tags="html web structure dasar foundation"
+                style="grid-column: span 4;">
+                <div class="section-label" data-index="01">Core.</div>
+                <h3>HTML</h3>
+                <p>HyperText Markup Language. Fondasi dari setiap halaman web di dunia.</p>
+                <div
+                    style="height: 150px; background: #111; margin: 20px 0; border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #e34c26;">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <a href="materials/HTML-post.html" class="btn-explore"
+                    style="margin-top: 10px; width: 100%; justify-content: center;">Start
+                    Learning</a>
+            </div>
+
+            <!-- CSS -->
+            <div class="card reveal material-card" data-tags="css design style layout visual"
+                style="grid-column: span 4;">
+                <div class="section-label" data-index="02">Design.</div>
+                <h3>CSS</h3>
+                <p>Cascading Style Sheets. Memberikan warna, tata letak, dan keindahan pada struktur HTML.</p>
+                <div
+                    style="height: 150px; background: #111; margin: 20px 0; border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #264de4;">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <a href="#" class="btn-explore" style="margin-top: 10px; width: 100%; justify-content: center;">Start
+                    Learning</a>
+            </div>
+
+            <!-- JS -->
+            <div class="card reveal material-card" data-tags="js javascript logic interactive programming script"
+                style="grid-column: span 4;">
+                <div class="section-label" data-index="03">Logic.</div>
+                <h3>Javascript</h3>
+                <p>Bahasa pemrograman dinamis yang membuat website hidup dan mampu berinteraksi.</p>
+                <div
+                    style="height: 150px; background: #111; margin: 20px 0; border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #f7df1e;">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <a href="#" class="btn-explore" style="margin-top: 10px; width: 100%; justify-content: center;">Start
+                    Learning</a>
+            </div>
+        </section>
+
+        <div id="no-results" class="no-results">
+            Materi tidak ditemukan. Cobalah kata kunci lain seperti 'HTML' atau 'Design'.
+        </div>
+    </main>
+
+    <footer class="container"
+        style="padding: 60px 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary); font-size: 0.8rem; margin-top: 100px;">
+        <p>&copy; 2026 Dev Archive | Coding Ecosystem</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

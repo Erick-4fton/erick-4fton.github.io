@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkenalan dengan HTML: Fondasi Dasar Web | Dev Archive</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/logo-tab.png">
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <style>
+        .post-header {
+            margin: 80px 0 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 40px;
+        }
+
+        .post-meta {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .post-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-width: 800px;
+        }
+
+        .post-content h2 {
+            color: var(--text-primary);
+            margin: 40px 0 20px 0;
+            font-size: 2rem;
+        }
+
+        .post-content p {
+            margin-bottom: 25px;
+        }
+
+        .post-content code {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--accent-color);
+        }
+
+        .post-content pre {
+            background: #0a0a0b;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            overflow-x: auto;
+            margin: 30px 0;
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            color: #d1d1d1;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: 20px 0 30px 40px;
+            color: var(--text-secondary);
+        }
+
+        .post-content li {
+            margin-bottom: 12px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container" style="height: auto; padding-bottom: 0;">
+        <nav class="top-nav" style="padding-top: 40px;">
+            <a href="../index.html" class="brand" style="text-decoration: none; color: inherit;">
+                <div class="natgeo-logo"></div>
+                <span>Dev<br>Archive</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <p>Architecture is<br>about making life<br>more simple.</p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article>
+            <header class="post-header">
+                <a href="../pages/explore.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Explore
+                </a>
+                <p class="post-meta">2026-02-18 | HTML Foundation</p>
+                <h1 class="hero-text-left" style="font-size: 3.5rem; line-height: 1.1;">Berkenalan dengan HTML: Fondasi
+                    Dasar Web</h1>
+                <p style="margin-top: 20px; font-style: italic; color: var(--text-secondary);">Oleh Admin Dev Archive
+                </p>
+            </header>
+
+            <div class="post-content reveal active">
+                <h1>Apa itu HTML?</h1>
+
+                <strong>HTML (HyperText Markup Language)</strong> adalah bahasa standar yang digunakan untuk membuat dan
+                menyusun struktur halaman web. Bayangkan HTML sebagai kerangka tulang pada manusia; tanpa kerangka, kita
+                tidak bisa membangun otot (CSS) atau otak (JS).
+
+                <h2>Struktur Dasar HTML</h2>
+
+                <p>Setiap file HTML memiliki struktur standar yang wajib ada. Berikut adalah contoh kerangka minimum
+                    sebuah halaman web:</p>
+
+                <p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Halaman Pertama Saya&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Halo Dunia!&lt;/h1&gt;
+    &lt;p&gt;Ini adalah paragraf pertama saya di web.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                </p>
+
+                <h2>Elemen Penting dalam HTML</h2>
+
+                <p>Ada beberapa elemen dasar yang akan sering kamu gunakan saat memulai pembelajaran:</p>
+
+                <ul>
+                    <li>Headings: Digunakan untuk judul, mulai dari <code>&lt;h1&gt;</code> sampai
+                        <code>&lt;h6&gt;</code>.</li>
+                    <li>Paragraphs: Menggunakan tag <code>&lt;p&gt;</code> untuk membungkus teks.</li>
+                    <li>Links: Menggunakan tag <code>&lt;a&gt;</code> untuk menghubungkan antar halaman.</li>
+                    <li>Images: Menggunakan tag <code>&lt;img&gt;</code> untuk menampilkan gambar.</li>
+                </ul>
+
+                <h3>Kenapa Harus Belajar HTML?</h3>
+
+                <p>Memahami HTML adalah langkah pertama yang paling krusial sebelum kamu melangkah ke dunia CSS untuk
+                    desain atau Javascript untuk logika. Dengan HTML yang solid, struktur website kamu akan lebih mudah
+                    dipahami oleh mesin pencari (SEO) dan aksesibel bagi semua orang.</p>
+
+                <p>&gt; &quot;Struktur yang baik adalah awal dari kode yang hebat.&quot;</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="container"
+        style="padding: 60px 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary); font-size: 0.8rem; margin-top: 100px;">
+        <p>&copy; 2026 Dev Archive | Engineering Excellence</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
